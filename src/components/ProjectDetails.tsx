@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 interface Props {
   name: string;
@@ -6,7 +7,7 @@ interface Props {
   technologies: string[];
   githubUrl?: string;
   heroimage: string;
-  markdown: string;
+  markdownFile: string;
   back: () => void;
 }
 
@@ -16,17 +17,29 @@ const ProjectDetails = ({
   technologies,
   githubUrl,
   heroimage,
-  markdown,
+  markdownFile,
   back,
 }: Props) => {
+  const [markdown, setMarkdown] = useState("");
+
+  useEffect(() => {
+    fetch(markdownFile)
+      .then((response) => response.text())
+      .then((text) => setMarkdown(text));
+  }, [markdownFile]);
+
   return (
     <div>
       <img src={heroimage} alt={name} />
       <div>{name}</div>
       <div>{description}</div>
       <div>{technologies.join(", ")}</div>
-      <div>{githubUrl}</div>
-      <div>{markdown}</div>
+      {githubUrl && (
+        <div>
+          <a href={githubUrl}>{githubUrl}</a>
+        </div>
+      )}
+      <ReactMarkdown>{markdown}</ReactMarkdown>
       <button onClick={back}>Back</button>
     </div>
   );

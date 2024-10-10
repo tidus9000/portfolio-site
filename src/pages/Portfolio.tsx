@@ -26,7 +26,7 @@ const Portfolio = () => {
           description={projects[activeIndex].description}
           technologies={projects[activeIndex].technologies}
           heroimage={projects[activeIndex].image}
-          markdown={projects[activeIndex].markdown}
+          markdownFile={projects[activeIndex].markdown}
           back={() => setActiveIndex(-1)}
         />
       )}

@@ -4,20 +4,20 @@
         "image": "./src/assets/images/Screenshot 2023-05-03 090147.png",
         "description": "Project Alpha is a web application designed to streamline task management. It features a user-friendly interface and real-time collaboration tools.",
         "technologies": ["JavaScript", "React", "Node.js"],
-        "markdown": "./src/assets/markdown/project-alpha.md"
+        "markdown": "/src/assets/markdown/project-alpha.md"
     },
     {
         "name": "Beta Build",
         "image": "./src/assets/images/Screenshot 2023-04-13 111737.png",
         "description": "Beta Build is a mobile app that helps users track their fitness goals. It includes personalized workout plans and progress tracking features.",
         "technologies": ["Java", "Kotlin", "Android"],
-        "markdown": "./src/assets/markdown/beta-build.md"
+        "markdown": "/src/assets/markdown/beta-build.md"
     },
     {
         "name": "Gamma Game",
         "image": "./src/assets/images/Screenshot 2023-03-16 151508.png",
         "description": "Gamma Game is an interactive puzzle game that challenges players with a series of increasingly difficult levels. It is designed to improve problem-solving skills.",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "./src/assets/markdown/gamma-game.md"
+        "markdown": "/src/assets/markdown/gamma-game.md"
     }
 ]
