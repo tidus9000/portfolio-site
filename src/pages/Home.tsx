@@ -1,7 +1,10 @@
 import React from "react";
 
-const Home = () => {
-  return <div>Home</div>;
+interface HomeProps {
+  className?: string;
+}
+const Home: React.FC<HomeProps> = ({ className }) => {
+  return <div className={className}>home</div>;
 };
 
 export default Home;

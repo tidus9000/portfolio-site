@@ -1,7 +1,10 @@
 import React from "react";
 
-const Blog = () => {
-  return <div>Blog</div>;
+interface BlogProps {
+  className?: string;
+}
+const Blog: React.FC<BlogProps> = ({ className }) => {
+  return <div className={className}>Blog</div>;
 };
 
 export default Blog;

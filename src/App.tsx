@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import styles from "./App.module.css";
 
 let items = ["Home", "Portfolio", "About Me", "Contact", "Blog"];
 
@@ -26,29 +27,39 @@ function App() {
 
   return (
     <div>
-      <video autoPlay loop muted>
+      <video autoPlay loop muted className={styles.background}>
         <source src={video} type="video/mp4" />
       </video>
       <h1>Arthur Mudney</h1>
-      <Button
-        onClicked={() => {
-          setListOpen(!listOpen);
-        }}
-      >
-        Toggle List
-      </Button>
-      <ListGroup
-        items={items}
-        heading={""}
-        onSelectItem={handleSelectItem}
-        listOpen={listOpen}
-      />
-      <div>
-        {listSelection === 0 && <Home />}
-        {listSelection === 1 && <Portfolio />}
-        {listSelection === 2 && <AboutMe />}
-        {listSelection === 3 && <Contact />}
-        {listSelection === 4 && <Blog />}
+      <div className={styles.listAndContentContainer}>
+        <div className={styles.listMenuContainer}>
+          <Button
+            onClicked={() => {
+              setListOpen(!listOpen);
+            }}
+          >
+            Toggle List
+          </Button>
+          <ListGroup
+            items={items}
+            heading={""}
+            onSelectItem={handleSelectItem}
+            listOpen={listOpen}
+          />
+        </div>
+        <div>
+          {listSelection === 0 && <Home className={styles.contentContainer} />}
+          {listSelection === 1 && (
+            <Portfolio className={styles.contentContainer} />
+          )}
+          {listSelection === 2 && (
+            <AboutMe className={styles.contentContainer} />
+          )}
+          {listSelection === 3 && (
+            <Contact className={styles.contentContainer} />
+          )}
+          {listSelection === 4 && <Blog className={styles.contentContainer} />}
+        </div>
       </div>
     </div>
   );

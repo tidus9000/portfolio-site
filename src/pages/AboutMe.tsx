@@ -1,7 +1,10 @@
 import React from "react";
 
-const AboutMe = () => {
-  return <div>AboutMe</div>;
+interface AboutMeProps {
+  className?: string;
+}
+const AboutMe: React.FC<AboutMeProps> = ({ className }) => {
+  return <div className={className}>About Me</div>;
 };
 
 export default AboutMe;

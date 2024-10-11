@@ -7,11 +7,7 @@ interface Props {
 }
 
 function Button({ onClicked, children, colour = "primary" }: Props) {
-  return (
-    <button className={"btn btn-" + colour} onClick={onClicked}>
-      {children}
-    </button>
-  );
+  return <button onClick={onClicked}>{children}</button>;
 }
 
 export default Button;
