@@ -35,6 +35,7 @@ justify-content: space-between;
     border-radius: 45px;
     padding: 20px;
     width: 100%;
+    max-width: 1000px;
 }
 
 .cardsContainer{
@@ -70,5 +71,5 @@ justify-content: space-between;
 }
 
 .cardImage{
-    
+    max-width: 100%;
 }

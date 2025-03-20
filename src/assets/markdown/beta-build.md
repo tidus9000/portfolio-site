@@ -1,6 +1,6 @@
-# An h1 header
+# Shell Corp
 
-Paragraphs are separated by a blank line.
+Shell corp was a cool game made by me and 2 friends
 
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
