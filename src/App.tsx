@@ -12,7 +12,7 @@ import styles from "./App.module.css";
 let items = ["Home", "Portfolio", "About Me", "Contact", "Blog"];
 
 function App() {
-  const handleSelectItem = (item: string, index: number) => {
+  const handleSelectItem = (index: number) => {
     setListSelection(index);
   };
 

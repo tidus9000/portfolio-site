@@ -4,7 +4,7 @@ import styles from "../App.module.css";
 interface Props {
   items: string[];
   heading: string;
-  onSelectItem: (item: string, index: number) => void;
+  onSelectItem: (index: number) => void;
   listOpen?: boolean;
 }
 
@@ -27,7 +27,7 @@ function ListGroup({ items, heading, onSelectItem, listOpen }: Props) {
               key={index}
               onClick={() => {
                 setSelectedIndex(index);
-                onSelectItem(item, index);
+                onSelectItem(index);
               }}
             >
               {item}
