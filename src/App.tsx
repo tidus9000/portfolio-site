@@ -1,7 +1,5 @@
 import { useState } from "react";
-import Message from "./message";
 import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
 import Button from "./components/Button";
 import video from "./assets/Background_Video.mp4";
 import Portfolio from "./pages/Portfolio";
@@ -17,11 +15,7 @@ function App() {
   const handleSelectItem = (item: string, index: number) => {
     setListSelection(index);
   };
-  const handleClickButton = () => {
-    setAlertState(true);
-  };
 
-  const [alertState, setAlertState] = useState(false);
   const [listOpen, setListOpen] = useState(false);
   const [listSelection, setListSelection] = useState(-1);
 

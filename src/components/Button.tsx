@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   children: string;
   colour?: string;
@@ -7,7 +5,7 @@ interface Props {
 }
 
 function Button({ onClicked, children, colour = "primary" }: Props) {
-  return <button onClick={onClicked}>{children}</button>;
+  return <button onClick={onClicked} className={`btn btn-${colour}`}>{children}</button>;
 }
 
 export default Button;
