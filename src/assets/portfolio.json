@@ -1,10 +1,10 @@
 [
     {
         "name": "Shell Corp",
-        "image": "assets/images/fired-eggs.png",
+        "image": "../public/assets/images/fired-eggs.png",
         "description": "A 1-8 player physics based egg-centric party game where you control, paint, and crack eggs!",
         "technologies": ["Unity", "Xbox One", "Steam"],
-        "markdown": "src/assets/markdown/project-alpha.md"
+        "markdown": "../public/assets/markdown/project-alpha.md"
     },
     {
         "name": "Developing a Novel Method for Making Music Interactive in Video Games",
