@@ -68,6 +68,9 @@ justify-content: space-between;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .markdown {
@@ -80,6 +83,11 @@ justify-content: space-between;
     border-radius: 1em;
   }
 
-.cardImage{
+.heroImage{
     max-width: 100%;
+}
+
+.cardImage{
+    max-width: 60%;
+    max-height: 50%;
 }

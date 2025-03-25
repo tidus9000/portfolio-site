@@ -1,5 +1,12 @@
 [
     {
+        "name": "Studio 5",
+        "image": "/assets/images/studio-5.jpg",
+        "description": "A base to host virtual live events through the use of pioneering technology to livestream volumetric video",
+        "technologies": ["Unity", "Steam"],
+        "markdown": "/assets/markdown/studio-5.md"
+    },
+    {
         "name": "Shell Corp",
         "image": "/assets/images/fired-eggs.png",
         "description": "A 1-8 player physics based egg-centric party game where you control, paint, and crack eggs!",
@@ -11,14 +18,14 @@
         "image": "/assets/images/MscDiss.png",
         "description": "A dissertation report investigating the impact of adding rhythm timing elements to a variety of game genres",
         "technologies": ["Unity", "Fmod"],
-        "markdown": "/assets/markdown/beta-build.md"
+        "markdown": "/assets/markdown/msc-dissertation.md"
     },
     {
         "name": "Don't Walk By",
         "image": "/assets/images/DWB.png",
         "description": "A serious game designed to help teach workplace health and safety in a fun and engaging way.",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/dont-walk-by.md"
     },
     {
         "name": "To Me To You",
