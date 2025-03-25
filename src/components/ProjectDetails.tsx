@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import styles from "../App.module.css";
+
 
 interface Props {
   name: string;
@@ -39,7 +41,7 @@ const ProjectDetails = ({
           <a href={githubUrl}>{githubUrl}</a>
         </div>
       )}
-      <ReactMarkdown>{markdown}</ReactMarkdown>
+      <ReactMarkdown className={styles.markdown}>{markdown}</ReactMarkdown>
       <button onClick={back}>Back</button>
     </div>
   );

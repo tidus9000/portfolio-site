@@ -146,6 +146,8 @@ Here's a "line block":
 
 and images can be specified like so:
 
+![](/assets/video/Shell-Corp-Launch-Trailer.mp4)
+
 ![example image](/assets/images/DWB.png "Odo is a cute doggo")
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display

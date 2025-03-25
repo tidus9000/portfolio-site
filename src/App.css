@@ -34,16 +34,49 @@
 }
 
 .background {
+  --aspect-ratio: calc(16 / 9);
+  
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  
+  /* This will make the element fill the window while maintaining aspect ratio */
+  object-fit: cover;
+  
+  /* Calculate which dimension to scale by */
+  width: 100vw;
+  height: calc(100vw / var(--aspect-ratio));
+  
+  /* If the window is taller than our aspect ratio, switch to height-based scaling */
+  @media (max-aspect-ratio: calc(16 / 9)) {
+    width: calc(100vh * var(--aspect-ratio));
+    height: 100vh;
+  }
+  
+  /* Center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Hide overflow (content will be cropped if needed) */
+  overflow: hidden;
   z-index: -1;
 }
 
 .card {
   padding: 2em;
+}
+
+.markdownContainer {
+  text-align: center;
+  padding: 2em;
+  margin: 2em;
+  width: 80%;
+  height: 80%;
+  background-color: #f0f0f0;
+  border-radius: 1em;
 }
 
 .read-the-docs {
