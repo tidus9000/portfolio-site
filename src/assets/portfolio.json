@@ -28,80 +28,38 @@
         "markdown": "/assets/markdown/dont-walk-by.md"
     },
     {
-        "name": "To Me To You",
-        "image": "/assets/images/TMTY.png",
-        "description": "A multiplayer Virtual Reality action puzzler",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
         "name": "The Smashing Engine",
         "image": "/assets/images/Smash.png",
         "description": "A custom made game engine to recreate a Super Smash Bros. style game",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/smashing-engine.md"
     },
     {
         "name": "Kachiku64",
         "image": "/assets/images/Kachiku_1.png",
         "description": "A local multiplayer game for up to 64 players",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/kachiku64.md"
     },
     {
         "name": "Eggsassination",
         "image": "/assets/images/Eggsassination.png",
         "description": "A game where you wander in search of soldiers, but the controls are ridiculously difficult.",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
-        "name": "Raytracer",
-        "image": "/assets/images/Raytracer.gif",
-        "description": "A simple ray tracer made purely in C++ with basic materials and directional lighting.",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/eggsassination.md"
     },
     {
         "name": "Rocket League Atari 2600",
         "image": "/assets/images/RLDemake.gif",
         "description": "A demake of Rocket League for the Atari 2600",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
-        "name": "Super Trash Market",
-        "image": "/assets/images/STM.png",
-        "description": "Reduce, Reuse and Recycle in this multiplayer shop management game",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
-        "name": "Untitled VR Experiment",
-        "image": "/assets/images/VRGame.png",
-        "description": "Don't trust your eyes, or maybe trust just one of them",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
-        "name": "Moving Day",
-        "image": "/assets/images/MovingDay.png",
-        "description": "Assert your dominance over your housemates and claim all rooms as your own",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/slothit-league.md"
     },
     {
         "name": "Dan's Mission of Transmission",
         "image": "/assets/images/DMT.png",
         "description": "A puzzle game that's all about listening",
         "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
-    },
-    {
-        "name": "Tacklers",
-        "image": "/assets/images/Tacklers.png",
-        "description": "High octane multiplayer action",
-        "technologies": ["C#", "Unity", "Blender"],
-        "markdown": "/assets/markdown/gamma-game.md"
+        "markdown": "/assets/markdown/dans-mission-of-transmission.md"
     }
 ]

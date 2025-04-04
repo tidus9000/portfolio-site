@@ -1,0 +1,8 @@
+# The Smashing Engine
+## A custom made game engine to recreate a Super Smash Bros. style game
+
+The Smashing Engine Was a custom game engine built from Direct X with the intention of creating a game similar to Super Smash Bros. This custom built engine was developed almost completely from scratch by a team of 3 people in around 8 weeks. This project encompasses a variety of features. Through the use of pipeline systems to create and modify new characters, attack and levels. The creation of a custom basic 2D physics system. A method of importing sprite sheets and runtime animation editor. It also featured builds for multiple variations of hardware and the use of custom build options to allow for debug and editing tools to be made available only in certain configurations.
+
+This was probably one of the most rewarding projects I have taken on, the sheer amount of knowledge gained from creating a custom game engine in terms of pipeline, and optimisation for C++. Later builds than the one shown on video had even more features such as spritesheet animations, a basic particle system and with that, firework effects.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xUTIAafpe5k?si=nbGTiRJSoHRmTP4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
