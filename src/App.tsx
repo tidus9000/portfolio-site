@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import styles from "./App.module.css";
 
-let items = ["Home", "Portfolio", "About Me", "Contact", "Blog"];
+let items = ["Home", "Portfolio", "About Me", "Contact"];
 
 function App() {
   const handleSelectItem = (index: number) => {
