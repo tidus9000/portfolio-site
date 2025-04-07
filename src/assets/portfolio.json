@@ -1,5 +1,12 @@
 [
     {
+        "name": "This Website",
+        "image": "/assets/images/vite.png",
+        "description": "A place to find out an know all about me!",
+        "technologies": ["React", "Typescript", "Vite"],
+        "markdown":"/assets/markdown/this-site.md"
+    },
+    {
         "name": "Studio 5",
         "image": "/assets/images/studio-5.jpg",
         "description": "A base to host virtual live events through the use of pioneering technology to livestream volumetric video",
