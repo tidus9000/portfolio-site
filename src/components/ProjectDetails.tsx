@@ -31,11 +31,9 @@ const ProjectDetails = ({
   }, [markdownFile]);
 
   return (
-    <div>
+    <div className={styles.projectDetailsContainer}>
       <img src={heroimage} alt={name} className={styles.heroImage} />
-      <div>{name}</div>
-      <div>{description}</div>
-      <div>{technologies.join(", ")}</div>
+      <div>Technologies: {technologies.join(", ")}</div>
       {githubUrl && (
         <div>
           <a href={githubUrl}>{githubUrl}</a>

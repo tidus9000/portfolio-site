@@ -16,8 +16,8 @@ function App() {
     setListSelection(index);
   };
 
-  const [listOpen, setListOpen] = useState(false);
-  const [listSelection, setListSelection] = useState(-1);
+  const [listOpen, setListOpen] = useState(true);
+  const [listSelection, setListSelection] = useState(0);
 
   return (
     <div className={styles.appContainer}>
@@ -26,34 +26,29 @@ function App() {
       </video>
       <div className={styles.backgroundOverlay}></div>
       <h1>Arthur Mudney</h1>
-      <div className={styles.listAndContentContainer}>
-        <div className={styles.listMenuContainer}>
-          <Button
-            onClicked={() => {
-              setListOpen(!listOpen);
-            }}
-          >
-            Toggle List
-          </Button>
-          <ListGroup
-            items={items}
-            heading={""}
-            onSelectItem={handleSelectItem}
-            listOpen={listOpen}
-          />
-        </div>
-        <div>
-          {listSelection === 0 && <Home className={styles.contentContainer} />}
-          {listSelection === 1 && (
-            <Portfolio className={styles.contentContainer} />
-          )}
-          {listSelection === 2 && (
-            <AboutMe className={styles.contentContainer} />
-          )}
-          {listSelection === 3 && (
-            <Contact className={styles.contentContainer} />
-          )}
-          {listSelection === 4 && <Blog className={styles.contentContainer} />}
+        <div className={styles.siteContainer}>
+        <div className={styles.listAndContentContainer}>
+          <div className={styles.listMenuContainer}>
+            <ListGroup
+              items={items}
+              heading={"Menu"}
+              onSelectItem={handleSelectItem}
+              listOpen={listOpen}
+            />
+          </div>
+          <div>
+            {listSelection === 0 && <Home className={styles.contentContainer} />}
+            {listSelection === 1 && (
+              <Portfolio className={styles.contentContainer} />
+            )}
+            {listSelection === 2 && (
+              <AboutMe className={styles.contentContainer} />
+            )}
+            {listSelection === 3 && (
+              <Contact className={styles.contentContainer} />
+            )}
+            {listSelection === 4 && <Blog className={styles.contentContainer} />}
+          </div>
         </div>
       </div>
     </div>

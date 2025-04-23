@@ -18,6 +18,14 @@
     z-index: -1;
 }
 
+.siteContainer{
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    max-width: 1000px;
+}
+
 .appContainer {
     display: flex;
     flex-direction: column;
@@ -32,11 +40,39 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
+    list-style: none;
 }
 
 .listMenuContainer{
     flex-direction: column;
     max-width: fit-content;
+    margin: 20px;
+}
+
+.listMenuItem{
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.listMenuItem:hover{
+    background-color: rgba(100, 100, 100, 0.8);
+    transform: scale(1.25);
+    transition: all 0.5s ease;
+}
+.listMenuItemActive{
+    background-color: rgba(100, 100, 100, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .listAndContentContainer{
@@ -56,6 +92,8 @@ justify-content: space-between;
     margin: 30px;
     width: 100%;
     max-width: 1000px;
+    align-items: center;
+    color: white;
 }
 
 .cardsContainer{
@@ -75,15 +113,7 @@ justify-content: space-between;
     max-height: 600px;
     flex-grow: 1;
     padding: 16px;
-    color: rgb(242, 242, 242);
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -97,16 +127,20 @@ justify-content: space-between;
 
 .markdown {
     text-align: center;
-    padding: 2em;
-    margin: 2em;
-    width: 80%;
-    height: 80%;
+
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #f0f0f0;
     border-radius: 1em;
+    color: black;
   }
 
 .heroImage{
     max-width: 100%;
+    max-height: 250px;
 }
 
 .cardImage{
@@ -115,3 +149,54 @@ justify-content: space-between;
     max-width: 300px;
     max-height: 300px;
 }
+
+.projectDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 20px;
+}
+
+.socialsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.socialIcon{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+.socialIcon:hover{
+    transform: scale(1.25);
+    transition: all 0.5s ease;
+}
+
+.workHistoryEntry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    margin-top: 20px;
+}
+.educationHistoryEntry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+    margin-top: 20px;
+}
+
+.details {
+    overflow: hidden; /* Ensures content doesn't overflow */
+    max-height: 0; /* Initially hidden */
+    transition: max-height 0.5s ease; /* Smooth transition */
+  }
+  
+  .detailsVisible {
+    max-height: 500px; /* Set a large enough value to accommodate content */
+  }

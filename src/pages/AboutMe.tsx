@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styles from "../App.module.css";
+import Button from "../components/Button";
 
 interface AboutMeProps {
   className?: string;
@@ -13,14 +15,18 @@ const WorkHistoryEntry: React.FC<{
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="work-history-entry">
+    <div className={styles.workHistoryEntry}>
       <h3>{title}</h3>
       <p><strong>Company:</strong> {company}</p>
       <p><strong>Time:</strong> {time}</p>
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <Button onClicked={() => setIsOpen(!isOpen)} colour="secondary">
         {isOpen ? "Hide Details" : "Show Details"}
-      </button>
-      {isOpen && <p className="details">{details}</p>}
+      </Button>
+      <div
+        className={`${styles.details} ${isOpen ? styles.detailsVisible : ""}`}
+      >
+        <p>{details}</p>
+      </div>
     </div>
   );
 };
@@ -34,14 +40,18 @@ const EducationHistoryEntry: React.FC<{
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="work-history-entry">
+    <div className={styles.educationHistoryEntry}>
       <h3>{title}</h3>
       <p><strong>Institution:</strong> {company}</p>
       <p><strong>Time:</strong> {time}</p>
-      <button onClick={() => setIsOpen(!isOpen)}>
+      <Button onClicked={() => setIsOpen(!isOpen)} colour="secondary">
         {isOpen ? "Hide Details" : "Show Details"}
-      </button>
-      {isOpen && <p className="details">{details}</p>}
+      </Button>
+      <div
+        className={`${styles.details} ${isOpen ? styles.detailsVisible : ""}`}
+      >
+        <p>{details}</p>
+      </div>
     </div>
   );
 };

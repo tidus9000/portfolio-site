@@ -21,8 +21,8 @@ function ListGroup({ items, heading, onSelectItem, listOpen }: Props) {
             <li
               className={
                 selectedIndex === index
-                  ? "list-group-item active"
-                  : "list-group-item"
+                  ? styles.listMenuItemActive
+                  : styles.listMenuItem
               }
               key={index}
               onClick={() => {
