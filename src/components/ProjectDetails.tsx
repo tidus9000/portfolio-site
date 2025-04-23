@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import styles from "../App.module.css";
 import rehypeRaw from "rehype-raw";
+import Button from "./Button";
 
 interface Props {
   name: string;
@@ -15,7 +16,6 @@ interface Props {
 
 const ProjectDetails = ({
   name,
-  description,
   technologies,
   githubUrl,
   heroimage,
@@ -40,7 +40,7 @@ const ProjectDetails = ({
         </div>
       )}
       <ReactMarkdown className={styles.markdown} rehypePlugins={[rehypeRaw]}>{markdown}</ReactMarkdown>
-      <button onClick={back}>Back</button>
+      <Button onClicked={back} colour="secondary">Back</Button>
     </div>
   );
 };

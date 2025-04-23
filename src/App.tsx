@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ListGroup from "./components/ListGroup";
-import Button from "./components/Button";
 import video from "./assets/Background_Video.mp4";
 import Portfolio from "./pages/Portfolio";
 import Home from "./pages/Home";
@@ -16,7 +15,7 @@ function App() {
     setListSelection(index);
   };
 
-  const [listOpen, setListOpen] = useState(true);
+  const [listOpen] = useState(true);
   const [listSelection, setListSelection] = useState(0);
 
   return (
