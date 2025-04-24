@@ -5,4 +5,4 @@ Slothit League was a game created with the intention of being a representation o
 
 We even created a manual for the game with a back story and a tick box list of achievements to really add to the Atari 2600 aesthetic.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S_Whd7VdI8o?si=oixe-au8O0DyWLx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="75%" height="315" src="https://www.youtube.com/embed/S_Whd7VdI8o?si=oixe-au8O0DyWLx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

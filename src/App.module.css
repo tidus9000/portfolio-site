@@ -79,30 +79,6 @@
     transition: all 0.3s ease;
 }
 
-/* Card animations */
-.cardEnter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  
-  .cardEnterActive {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .cardExit {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .cardExitActive {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-
 .pageEnter {
     opacity: 0;
     transform: translateX(100%);
@@ -219,6 +195,7 @@ justify-content: space-between;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 .socialIcon{

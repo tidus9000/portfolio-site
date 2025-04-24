@@ -10,8 +10,8 @@ being a small team, I had to wear a lot of hats over my 4 years working at Conde
 
 The windows version of Studio 5 is still available on steam for free with a recording of one of our previous shows.
 
-<iframe src="https://store.steampowered.com/widget/2271140/" frameborder="0" width="646" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/2271140/" frameborder="0" width="75%" height="190"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9cQyvhL8eZY?si=qCXdVKVc4DO5XM-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="75%" height="315" src="https://www.youtube.com/embed/9cQyvhL8eZY?si=qCXdVKVc4DO5XM-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6M85nnlorus?si=xkewCWmkcZtWlEg_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="75%" height="315" src="https://www.youtube.com/embed/6M85nnlorus?si=xkewCWmkcZtWlEg_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

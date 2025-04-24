@@ -5,4 +5,4 @@ Eggsassination was a game created in 3 weeks from a randomly generated brief. Ha
 
 This small project eventually became the inspiration for my first commercial project: Shell Corp
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L6qPvoNR-c0?si=k_wYhk7Bv5V7JM43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="75%" height="315" src="https://www.youtube.com/embed/L6qPvoNR-c0?si=k_wYhk7Bv5V7JM43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
