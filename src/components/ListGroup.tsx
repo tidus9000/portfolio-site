@@ -13,7 +13,7 @@ function ListGroup({ items, heading, onSelectItem, listOpen }: Props) {
 
   return (
     <>
-      <h1>{heading}</h1>
+      <h1 className={styles.header}>{heading}</h1>
       {items.length === 0 && <p>No Items</p>}
       {listOpen && (
         <ul className={styles.listMenu}>

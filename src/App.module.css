@@ -26,6 +26,10 @@
     max-width: 1000px;
 }
 
+.header{
+    color: white;
+}
+
 .appContainer {
     display: flex;
     flex-direction: column;

@@ -24,7 +24,7 @@ function App() {
         <source src={video} type="video/mp4" />
       </video>
       <div className={styles.backgroundOverlay}></div>
-      <h1>Arthur Mudney</h1>
+      <h1 className={styles.header}>Arthur Mudney</h1>
         <div className={styles.siteContainer}>
         <div className={styles.listAndContentContainer}>
           <div className={styles.listMenuContainer}>

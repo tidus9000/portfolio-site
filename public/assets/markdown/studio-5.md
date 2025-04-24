@@ -1,6 +1,6 @@
 # Studio 5
 
-#### Subheading
+#### A base to host virtual live events through the use of pioneering technology to livestream volumetric video
 
 Studio 5 was a project stemming from my first job after attaining my masters degree. The company I worked at, Condense, specialised in livestreaming volumetric video technology and Studio 5 was a Windows and web browser app developed to enable music artists to perform live shows using our technology.
 
