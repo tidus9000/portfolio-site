@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 import ListGroup from "./components/ListGroup";
 import video from "./assets/Background_Video.mp4";
 import Portfolio from "./pages/Portfolio";
@@ -18,6 +19,23 @@ function App() {
   const [listOpen] = useState(true);
   const [listSelection, setListSelection] = useState(0);
 
+  const renderPage = () => {
+    switch (listSelection) {
+      case 0:
+        return <Home className={styles.contentContainer} />;
+      case 1:
+        return <Portfolio className={styles.contentContainer} />;
+      case 2:
+        return <AboutMe className={styles.contentContainer} />;
+      case 3:
+        return <Contact className={styles.contentContainer} />;
+      case 4:
+        return <Blog className={styles.contentContainer} />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className={styles.appContainer}>
       <video autoPlay loop muted className={styles.background}>
@@ -25,7 +43,7 @@ function App() {
       </video>
       <div className={styles.backgroundOverlay}></div>
       <h1 className={styles.header}>Arthur Mudney</h1>
-        <div className={styles.siteContainer}>
+      <div className={styles.siteContainer}>
         <div className={styles.listAndContentContainer}>
           <div className={styles.listMenuContainer}>
             <ListGroup
@@ -35,18 +53,22 @@ function App() {
               listOpen={listOpen}
             />
           </div>
-          <div>
-            {listSelection === 0 && <Home className={styles.contentContainer} />}
-            {listSelection === 1 && (
-              <Portfolio className={styles.contentContainer} />
-            )}
-            {listSelection === 2 && (
-              <AboutMe className={styles.contentContainer} />
-            )}
-            {listSelection === 3 && (
-              <Contact className={styles.contentContainer} />
-            )}
-            {listSelection === 4 && <Blog className={styles.contentContainer} />}
+          <div className={styles.contentWrapper}>
+            <SwitchTransition>
+              <CSSTransition
+                key={listSelection}
+                timeout={500}
+                classNames={{
+                  enter: styles.pageEnter,
+                  enterActive: styles.pageEnterActive,
+                  exit: styles.pageExit,
+                  exitActive: styles.pageExitActive,
+                }}
+                unmountOnExit
+              >
+                {renderPage()}
+              </CSSTransition>
+            </SwitchTransition>
           </div>
         </div>
       </div>

@@ -79,6 +79,58 @@
     transition: all 0.3s ease;
 }
 
+/* Card animations */
+.cardEnter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .cardEnterActive {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .cardExit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .cardExitActive {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+
+.pageEnter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .pageEnterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .pageExit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .pageExitActive {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .contentWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
 .listAndContentContainer{
     display: flex;
     flex-direction: row;
