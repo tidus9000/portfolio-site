@@ -117,7 +117,7 @@ Over the 5 years that I worked for Game, I gained substantial experience. Starti
 "
         />
         <WorkHistoryEntry
-          title="Deputy Maanager"
+          title="Deputy Manager"
           company="Pier Trading Ltd"
           time="2007 - 2011"
           details="This position was my first taste of the world of work, where I quickly rose through the ranks to become deputy manager. Responsibilities included serving customers, ordering stock, planning the rota and independently running a coffee hut."
