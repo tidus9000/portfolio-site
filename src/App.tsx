@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import ListGroup from "./components/ListGroup";
@@ -69,6 +70,7 @@ function App() {
                 {renderPage()}
               </CSSTransition>
             </SwitchTransition>
+            <Analytics />
           </div>
         </div>
       </div>
